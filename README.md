@@ -1,2 +1,49 @@
-# git_test
-git test
+# git_abapCI_jenkinsfile
+
+This repo is for setting up a Jenkins Pipeline to test ABAP objects by package.
+
+To use this, do the following:
+
+ - In ABAP
+   - Create a package called "Z_GIT"
+   - In package "Z_GIT", create an abap program called "ZTX001" with the code seen below. N.B. This code is designed to fail an ATC check
+   
+   REPORT ZTX001.
+
+   TABLES usr05.
+   
+   SELECT * FROM usr05.
+
+   ENDSELECT.
+
+   WRITE: / 'Hello'.
+
+   start-of-selection.
+   
+   WRITE: / 'start'.
+
+ - In Docker
+   - Install Jenkins
+   - Execute Jenkins 
+
+ - In a Browser 
+   - Enter URL for Jenkins
+   - Login to Jenkins
+   - Click "Manage Jenkins" -> "Manage Plugins" and install "Abap Continuous Integration Plugin"
+
+ - In Docker
+   - Stop and then start Jenkins
+
+ - In a Browser 
+   - Enter URL for Jenkins
+   - Login to Jenkins
+   - Click "Manage Jenkins" -> "Configure System", page down to the "Abap Ci Plugin" section and add your SAP system  
+   - Go back to main "Dashboard"
+   - Click "New Item"
+     - In "item name", Enter "zgcts_XXXXX" (where XXXXX is the package you want to test)
+     - Select "Multibranch Pipeline"
+     - Press "OK"
+     - In next screen
+       - In "Display Name", enter "zgcts_XXXXX" (where XXXXX is the package you want to test)
+       - In section "Branch Sources" press "Add source"->"Github" and populate "Repository HTTPS URL" with this repo url e.g. "https://github.com/CurlyWurly-1/git_abapCI_jenkinsfile.git"
+       - Press "save"
