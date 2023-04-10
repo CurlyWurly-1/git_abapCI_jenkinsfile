@@ -17,7 +17,7 @@ To use this, do the following:
 
  - In Docker
    - Install Jenkins
-   - Execute Jenkins 
+   - Execute Jenkins (note URL for Jenkins)
 
  - In a Browser 
    - Enter URL for Jenkins
@@ -25,7 +25,8 @@ To use this, do the following:
    - Click "Manage Jenkins" -> "Manage Plugins" and install "Abap Continuous Integration Plugin"
 
  - In Docker
-   - Stop and then start Jenkins
+   - Stop Jenkins
+   - Restart Jenkins
 
  - In a Browser 
    - Enter URL for Jenkins
