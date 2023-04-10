@@ -41,3 +41,6 @@ To use this, do the following:
        - In "Display Name", enter "zgcts_z_git" 
        - In section "Branch Sources" press "Add source"->"Github" and populate "Repository HTTPS URL" with this repo url e.g. "https://github.com/CurlyWurly-1/git_abapCI_jenkinsfile.git"
        - Press "save"
+   - Go back to main "Dashboard"
+   - Click "OpenBlue Ocean"
+   - Click on "zgcts_z_git", click on the run and you will get something like the following page 
