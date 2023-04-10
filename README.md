@@ -48,6 +48,6 @@ To use this, do the following:
 
 
  - In ABAP
-   - Execute ABAP program SATC_UI_RUN_MONITOR
+   - Execute ABAP program "SATC_UI_RUN_MONITOR"
    - Highlight line that says "Z_GIT"
    - Press the button "result" and you will see more detail on the error(s)
