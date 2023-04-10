@@ -45,3 +45,9 @@ To use this, do the following:
    - Click "OpenBlue Ocean"
    - Click on "zgcts_z_git", click on the run and you will get something like the following page 
 <img src="jenkins1.jpg" alt="blueOcean_1"/>
+
+
+ - In ABAP
+   - Execute ABAP program SATC_UI_RUN_MONITOR
+   - Highlight line that says "Z_GIT"
+   - Press the button "result" and you will see more detail on the error(s)
