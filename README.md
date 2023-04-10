@@ -33,10 +33,10 @@ To use this, do the following:
    - Click "Manage Jenkins" -> "Configure System", page down to the "Abap Ci Plugin" section and add your SAP system  
    - Go back to main "Dashboard"
    - Click "New Item"
-     - In "item name", Enter "zgcts_XXXXX" (where XXXXX is the package you want to test)
+     - In "item name", Enter "zgcts_z_git" (where "z_git" is the package you want to test)
      - Select "Multibranch Pipeline"
      - Press "OK"
      - In next screen
-       - In "Display Name", enter "zgcts_XXXXX" (where XXXXX is the package you want to test)
+       - In "Display Name", enter "zgcts_z_git" 
        - In section "Branch Sources" press "Add source"->"Github" and populate "Repository HTTPS URL" with this repo url e.g. "https://github.com/CurlyWurly-1/git_abapCI_jenkinsfile.git"
        - Press "save"
