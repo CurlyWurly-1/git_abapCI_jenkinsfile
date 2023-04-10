@@ -7,20 +7,13 @@ To use this, do the following:
  - In ABAP
    - Create a package called "Z_GIT"
    - In package "Z_GIT", create an abap program called "ZTX001" with the code seen below. N.B. This code is designed to fail an ATC check
-   
-   REPORT ZTX001.
-
-   TABLES usr05.
-   
-   SELECT * FROM usr05.
-
-   ENDSELECT.
-
-   WRITE: / 'Hello'.
-
-   start-of-selection.
-   
-   WRITE: / 'start'.
+     - REPORT ZTX001.
+     - TABLES usr05.
+     - SELECT * FROM usr05.
+     - ENDSELECT.
+     - WRITE: / 'Hello'.
+     - start-of-selection.
+     - WRITE: / 'start'.
 
  - In Docker
    - Install Jenkins
